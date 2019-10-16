@@ -2,11 +2,20 @@ package com.example.daggerplayground
 
 import dagger.Module
 import dagger.Provides
+import javax.inject.Named
 
 @Module
 class SomeModule {
+
     @Provides
-    fun providesInfo(): Info {
-        return Info("some text")
+    @Named(FIRST_INFO)
+    fun provideFirstInfo(): Info {
+        return Info("this is first Info!")
+    }
+
+    @Provides
+    @Named(SECOND_INFO)
+    fun provideSecondInfo(): Info {
+        return Info("this is second Info!")
     }
 }

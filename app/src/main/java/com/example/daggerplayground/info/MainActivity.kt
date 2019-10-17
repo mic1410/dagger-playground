@@ -1,7 +1,8 @@
-package com.example.daggerplayground
+package com.example.daggerplayground.info
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.example.daggerplayground.R
 import kotlinx.android.synthetic.main.activity_main.*
 import javax.inject.Inject
 import javax.inject.Named

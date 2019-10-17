@@ -1,4 +1,4 @@
-package com.example.daggerplayground
+package com.example.daggerplayground.info
 
 import dagger.Component
 
